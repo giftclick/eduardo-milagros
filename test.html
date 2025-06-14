@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Nuestra Boda Dayana y Arturo</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Dayana y Arturo">
+    <meta property="og:description" content="¡Te invitamos a celebrar con nosotros!">
+    <meta property="og:image" content="ring.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:type" content="website">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('./assets/perla.png') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            width: 90%;
+            max-width: 1200px;
+            background: white; /* Opcional, dependiendo si quieres fondo blanco en el contenido */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .parallax, .bless, .bible-quote {
+            margin-bottom: 20px; /* Para que haya espacio entre las secciones */
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Contenido dentro del marco -->
+    <div class="wrapper">
+        <!-- Sección con efecto parallax -->
+        <div class="parallax">
+            <div class="background-image"></div>
+            <h1>Nuestra<br>Boda</h1>
+            <img src="assets/1.jpg" alt="Nuestra Boda" class="image-overlay">
+        </div>
+
+        <!-- Código original sigue aquí... -->
+        <div class="invitation reveal">
+            <h1 class="names reveal">Dayana y Arturo</h1>
+            <h2>¡Estás invitado! <br><br>Queremos compartir contigo<br>este momento tan especial.</h2>
+
+            <div class="wedding-time reveal">
+                <span>19</span>
+                <span>07</span>
+                <span>25</span>
+            </div>
+            <p class="fancy-text reveal" style="font-size: 2em;">04:00 PM</p>
+
+            <p class="countdown-label reveal">Recuerda que faltan</p>
+            <div id="countdown" class="reveal">
+                <span id="days">0</span> :
+                <span id="hours">00</span> :
+                <span id="minutes">00</span> :
+                <span id="seconds">00</span>
+            </div>
+        </div>
+
+        <div class="bless reveal-right">
+            <h2>Con la bendición de Dios y el amor de nuestros padres, sellaremos nuestro amor en un día lleno de
+                felicidad y gratitud.</h2>
+            <div class="parents reveal-right">
+                <p class="left">Julio Walter Mauricio Cordova <br> Frescia Esmeralda Oviedo Gerardini</p>
+                <p class="right">José Julio Chinchay Gabriel <br> Ana Maria Chacaltana Pisconte</p>
+            </div>
+        </div>
+
+        <div class="bible-quote">
+            <h1 class="tittle-p reveal-left">Nuestro <br>sí acepto</h1>
+            <img src="assets/comp1.jpg" alt="Pareja tomados de la mano" class="quote-image image-reveal" id="BW" />
+            <img src="assets/comp2.jpg" alt="Pareja tomados de la mano" class="quote-image image-reveal" id="BW" />
+            <img src="assets/comp3.jpg" alt="Pareja tomados de la mano" class="quote-image image-reveal" id="BW" />
+            <p class="quote reveal-right">
+                "Uno solo puede ser vencido, pero dos pueden resistir.
+                ¡La cuerda de tres hilos no se rompe fácilmente!"
+            </p>
+            <p class="reference reveal-right">Eclesiastés 4:12</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
